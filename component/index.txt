@@ -1,0 +1,87 @@
+<strong>Version : 2.0.8 (19 Februari 2017)</strong>
+<strong>Bugfixed</strong>
+*) Pada laporan Menggunakan Grid di dalam sstab Baris Pertama Tidak Muncul, Karena Tedeteksi Header 0px, sekarang di setting Minimal Header Height 20px
+<strong>New</strong>
+
+<hr>
+<strong>Version : 2.0.7 (17 Februari 2017)</strong>
+<strong>Bugfixed</strong>
+*) Mendeteksi Otomatis function mysql_ kalau ada pakai mysql_ kalau tidak ada otomatis pakai mysqli_
+*) Untuk Membuka Laporan yang format pdf pada Browser Firefox tidak bisa di Close
+<strong>New</strong>
+*) Pada Tag Log menambar BR = Browser Agent, untuk mengetahui Browser yang di gunakan dan OS
+
+<hr>
+<strong>Version : 2.0.6 (14 Februari 2017)</strong>
+<strong>Bugfixed</strong>
+*) Log Untuk Menu Click yang menggunakan Event Function Tidak bisa mendeteksi Menu Number Dan Menu Title.
+*) Merubah Format Log Dari XML Menjadi JSON.
+*) Database mysql_ di hapus di rubah menjadi mysqli_.
+<strong>New</strong>
+*) Menambah Function SaveCloseForm Untuk Menyimpan Log Form yang di Close
+
+<hr>
+<strong>Version : 2.0.5 (29 Mei 2016)</strong>
+<strong>Bugfixed</strong>
+*) Menghapus Object jQuery, Notify, diganti a.alert, a.confirm, Tooltip pada Textbox.
+*) Posisi Date Pick, atau Field Browse kadang tidak tepat di bawah Field Input. Kalau memiliki Parent dengan Jenis <strong>&lt;div&gt;</strong> dan memiliki Scroll
+*) Perbaikan beberapa Bug.
+<strong>New</strong>
+
+<hr>
+<strong>Version : 2.0.4 (26 Mei 2016)</strong>
+<strong>Bugfixed</strong>
+*) Slide Bar posisi Fixed, dan posisi paling atas dibandingkan dengan Form lainnya.
+*) Menu Horizontal kalau di click dan pada menu vertical pertama ada sub menu, maka tidak bisa membuka sub Menu nya.
+*) Posisi Date Pick, atau Field Browse kadang tidak tepat di bawah Field Input.
+*) Perbaikan beberapa Bug.
+<strong>New</strong>
+*) Untuk Memilih Menu bisa menggunakan Keyboar dengan Pilihan alt+1 - alt+9, atau bisa menggunakan ctrl+` untuk memilih Menu Pertama pada Horizontal Menu.
+
+<hr>
+<strong>Version : 2.0.3 (15 Mei 2016)</strong>
+<strong>Bugfixed</strong>
+*) DBGRID function GridContent Error
+*) DBGRID untuk di load pada Multi Tab dan menggunakan Footer maka Header akan ke tutup Footer.
+*) DBGRID Untuk di load pada Multi Tab Column Rezise Tidak Bisa di gunakan
+<strong>New</strong>
+*) Menu bisa menggunakan Keyboard, dengan Shortcut khusus untuk Horizontal Menu dengan menekan tombol alt+1 - alt+9, berikutnya bisa menggunakan tombol Panah.
+*) Form Change Themes.
+
+<hr>
+<strong>Version : 2.0.2 (08 Mei 2016)</strong>
+<strong>Bugfixed</strong>
+<strong>New</strong>
+*) Perubahan DBGRID Menggunakan div tanpa iFrame - ( Status Progress )
+*) Event Auto Width
+*) Event CellClick Callback
+*) Event Cell Double Click CallBack
+*) Pembuatan Grid Full Dari Javascript
+*) Penambahan Class txt.Browse
+*) Fitur untuk txt.Browse yang ini menggantikan Function Browse, dengan Peningkatan Fiture antara lain Bisa di gerakkan menggunakan Keyboard, sehingga tidak harus menggunakan Mouse, karena Object ini menggunakan Object DBGRID yang baru dan bukan Object terpisah. adapun parameter object ini adalah txt.Browse(cSQL,field,callBack)
+    cSQL = Query untuk Database
+    field = object Field ( Perubahan dari yang lama, kalau yang lama menggunakan field.name tapi kalau yang baru menggunakan object field itu sendiri ).
+    callBack = function yang akan di panggil setelah kita memilih Data.
+   
+<hr>
+<strong>Version : 2.0.1 (02 Mei 2016)</strong>
+<strong>Bugfixed</strong>
+*) Perbaikan masalah Form yang jenis Report tidak bisa di Move.
+    masalahnya adalah ada Perintah untuk membuat background div pada posisi body iframe supaya kalau form tidak aktif dan di click bisa langsung aktif ( windows list ) ini menjadi masalah Kalau yang berubah jenis laporan karena dia pdf tidak bisa di edit.
+*) Component ssTab apa bila ada lebih dari satu Grid maka tidak bisa load
+    Component sstab ada program untuk meload Posisi Content body dan bila dia ada iframe maka iframe akan Reload, makanya apabila component dbgrid bisa hilang isinya, karena dbgrid masih menggunakan component iframe dan akibanya di load ulang oleh iframe nya.
+*) Masalah Form membuka Form di bawahnya lagi / Child Form terjadi error.
+    Masalah nya ada pada function winList sekarang kita batasi yang bisa muncul di winList adalah yang di buka dari parent mainFrame, bukan Report, dan tidak di buka secara modal. baru bisa muncul di winList
+<strong>New</strong>
+*) Componnet Menu
+    Menu kita rubah menjadi Form css jadi memudahkan dalam melakukan editan.
+*) ToolBar
+    Component Toolbar kalau kita ingin membuat Toolbar.
+*) Status Bar
+    Component Status Bar
+*) Class a.ajax
+    class a.ajax memiliki Fasilitas callback jadi perintah ajax bisa di tunggu resultnya.
+   
+<hr>
+<strong>Version : 2.0.0 (21 April 2016)</strong>
+1. Upgrade Component Versi 2 Full Object
