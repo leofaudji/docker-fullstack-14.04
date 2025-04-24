@@ -84,5 +84,5 @@ RUN chown root:root /etc/mysql/my.cnf && chmod 644 /etc/mysql/my.cnf
 
 # Start services
 CMD service apache2 start && service mysql start && service rpcbind start && service cron start && tail -f /dev/null
-# ini editan dari git
+# ini editan dari git 2
   
